@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .heading{
+            text-align: center;
+            background-color: rgb(189, 48, 48);
+            border: 5px solid black;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .main2{
+            width: 100%;
+            display: flex;
+            border: 2px solid black;
+            font-family: cursive;
+            background-color: rgb(238, 200, 150);
+        }
+        .d1{
+            width: 30%;
+            padding: 8px;
+        }
+        .d2{
+            width: 70%;
+            padding: 8px;
+        }
+        .form-select{
+            width: 170px;
+        }
+        .i1,.i2{
+            padding: 8px;
+        }
+        .d3{
+            text-align: center;
+        }
+        .i2{
+            font-family: cursive;
+        }
+        .ed1{
+            padding-top:150px;
+        }
+        .ed2{
+            padding-top: 95px;
+
+        }
+        .ed3{
+            padding-top: 140px;
+        }
+       .ed4{
+        padding-top:130px;
+       }
+       .ed5{
+        padding-top:55px;
+       }
+       .ed6{
+        padding-top: 120px;
+       }
+       .ed7{
+        padding-top: 140px;
+       }
+       .ed8{
+        padding-top: 140px;
+       }
+       .ed9{
+        padding-top: 135px;
+       }
+       .ed10{
+        padding-top: 145px;
+       }
+       .ed11{
+        padding-top: 23px;
+       }
+       .ied{
+        padding-top:17px;
+       }
+
+       
+    </style>
+</head>
+<body>
+    <form id="form" name="resume" onsubmit="haze()">
+    <div class="main">
+            <div class="heading">
+            <h1>RESUME GENERATOR</h1></div>
+            <h2>ENTER YOUR DETAILS FOR YOUR RESUME MAKING</h2>
+            <h4>Note: Your informations must be valid and upto the mark!!</h4>
+
+            
+ <div class="main2">
+ <div class="d1">
+    <div class="i1"><label for="Name">Name</label><br></div> 
+    <div class="i1"><label for="phone">Phone</label><br></div> 
+    <div class="i1"><label for="email">Email</label><br></div> 
+    <div class="i1"><label for="linkd">LinkedIn</label></div>
+    <div class="i1"><label for="adr">Address </label></div>
+  <div class="ed11">  <div class="i1"><label for="obj">Objective</label></div> </div>
+    <div class="ed1"><div class="i1"><label for="exp">Experience</label></div> </div> 
+    <div class="ed2"><div class="i1"><label for="edu">Educational Details (Write in Percentage/CGP) <br>[Write your passing year too] </label></div> </div> 
+    <div class="i1"><label for="dasvi">10th</label></div> 
+    <div class="i1"><label for="bharvi">12th</label></div> 
+    <div class="i1"><label for="fs">Major</label></div>
+    <div class="i1"><label for="phela">1st year</label></div> 
+    <div class="i1"><label for="dusra">2nd year</label></div>
+    <div class="i1"><label for="teesra">3rd year</label></div>
+    <div class="ed5"><div class="i1"><label for="achi">Achievements</label><br></div> </div>
+    <div class="ed3"><div class="i1"><label for="tech">Technical Skills</label> <br></div> </div> 
+    <div class="ed4"><div class="i1"><label for="soft">Soft Skills</label> <br></div> </div> 
+    <div class="ed6"><div class="i1"><label for="per">Personal Details</label><br></div></div>
+    <div class="ed7"><div class="i1"><label for="ext">Extacurricular Activites</label><br></div></div>
+    <div class="ed8"><div class="i1"><label for="pro">Projects</label></div></div> 
+    <div class="ed9"><div class="i1"><label for="inte">Internships</label></div></div>   
+    <div class="ed10"><div class="i1"><label for="dec">Declaration</label></div></div>    
+ </div>
+
+
+        <div class="d2">
+    <div class="i2"><input id="Name" type="text" required placeholder="Enter your name"> <br></div>
+    <div class="i2"><input id="phone" type="number"> <br></div>
+    <div class="i2"><input id="email" type="email" placeholder="Enter your email"> <br></div>
+    <div class="i2"><input id="linkd" type="text"></div>
+    <div class="i2"><input id="adr" type="text"></div> <br>
+    <div class="i2"><textarea id="obj" cols="60" rows="10"></textarea></div>
+   <div class="i2"><textarea name="" id="exp" cols="60" rows="10"></textarea></div> 
+   
+  <div class="ied"> <div class="i2"><input id="dasvi" type="text"> <br></div>
+    <div class="i2"><input id="bharvi" type="text"> <br></div>
+    <div class="i2"><select name="field select" id="fs" class="form-select">
+        <option value="">Major</option>
+        <option value="BTECH">BTECH</option>
+        <option value="MTECH">MTECH</option>
+        <option value="BSC">BSC</option>
+        <option value="BBA">BBA</option>
+        <option value="BCOM">BCOM</option>
+        <option value="BA">BA</option>
+        <option value="MBA">MBA</option>
+        <option value="BE">BE</option>
+        <option value="MBBS">MBBS</option>
+        <option value="BCA">BCA</option>
+        <option value="LLB">LLB</option>
+        <option value="NDA">NDA</option>
+        <option value="INA">INA</option>
+        <option value="OTHERS">OTHERS</option>
+    </select></div>
+    <div class="i2"><input id="phela" type="text"> <br></div>
+    <div class="i2"><input id="dusra" type="text"></div>
+    <div class="i2"><input type="text" id="teesra"></div> <br></div> 
+    <div class="i2"><textarea name="" id="achi" cols="60" rows="10"></textarea></div>
+   <div class="i2"><textarea name="" id="tech" cols="60" rows="10"></textarea></div>
+    <div class="i2"><textarea name="" id="soft" cols="60" rows="10"></textarea></div>
+    <div class="i2"><textarea name="" id="per" cols="60" rows="10"></textarea></div>
+    <div class="i2"><textarea name="" id="ext" cols="60" rows="10"></textarea></div>
+    <div class="i2"><textarea name="" id="pro" cols="60" rows="10"></textarea></div>
+    <div class="i2"><textarea name="" id="inte" cols="60" rows="10"></textarea></div>
+    <div class="i2"><textarea name="" id="dec" cols="60" rows="10"></textarea></div>
+ 
+
+        </div>
+    </div>
+        <br>
+        
+        <div class="d3">
+            <br>
+            
+            <button type="submit">SUBMIT</button> <br>
+        </div>
+    </div>
+</form>
+
+<script>
+
+    function haze(){
+       var phone=document.resume.phone.value;
+       if(phone.length<10){
+        alert("Phone number must be of 10 digits");
+       return false;
+       }
+
+       var email=document.resume.email.value;
+       atpos=email.indexOf("@");
+       dotpos=email.lastIndexOf(".");
+
+       if(atpos<1 || (dotpos-atpos<2)) {
+        alert("Please enter correct email ID");
+        document.myform.email.focus();
+        return false;
+       }
+       return (true);
+
+    //    var Name=document.resume.Name.value;
+    //    if(Name=="null" || Name==" "){
+    //     alert("Name cant be blank");
+    //     return false;
+    //    }
+
+
+    // field selector dropdown {BCOM, BSC, BBA, BTECH, BA, MBBS}
+    
+       
+    }  
+
+
+    const form=document.getElementById('form');
+    const Name=document.getElementById('Name');
+    const phone=document.getElementById('phone');
+    const email=document.getElementById('email');
+    const linkd=document.getElementById('linkd');
+    const adr=document.getElementById('adr');
+    const obj=document.getElementById('obj');
+    const exp=document.getElementById('exp');
+    const dasvi=document.getElementById('dasvi');
+    const bharvi=document.getElementById('bharvi');
+    const phela=document.getElementById('phela');
+    const dusra=document.getElementById('dusra');
+    const teesra=document.getElementById('teesra');
+    const achi=document.getElementById('achi');
+    const tech=document.getElementById('tech');
+    const soft=document.getElementById('soft');
+    const fs=document.getElementById('fs');
+    const per=document.getElementById('per');
+    const ext=document.getElementById('ext');
+    const pro=document.getElementById('pro');
+    const inte=document.getElementById('inte');
+    const dec=document.getElementById('dec');
+
+    
+
+    form.addEventListener('submit',function(e){
+        e.preventDefault();
+
+        const NameValue= Name.value;
+        const phoneValue=phone.value;
+        const emailValue=email.value;
+        const linkdValue=linkd.value;
+        const adrValue=adr.value;
+        const objValue= obj.value;
+        const expValue= exp.value;
+        const dasviValue=dasvi.value;
+        const bharviValue=bharvi.value;
+        const phelaValue=phela.value;
+        const dusraValue= dusra.value;
+        const teesraValue= teesra.value;
+        const achiValue=achi.value;
+        const techValue=tech.value;
+        const softValue=soft.value;
+        const fsValue=fs.value;
+        const perValue=per.value;
+        const extValue=ext.value;
+        const proValue=pro.value;
+        const inteValue=inte.value;
+        const decValue=dec.value;
+
+
+        localStorage.setItem('Name',NameValue);
+        localStorage.setItem('Phone',phoneValue);
+        localStorage.setItem('Email',emailValue);
+        localStorage.setItem('linkd',linkdValue);
+        localStorage.setItem('adr',adrValue);
+        localStorage.setItem('obj',objValue);
+        localStorage.setItem('exp', expValue);
+        localStorage.setItem('dasvi',dasviValue);
+        localStorage.setItem('bharvi',bharviValue);
+        localStorage.setItem('phela',phelaValue);
+        localStorage.setItem('dusra',dusraValue);
+        localStorage.setItem('teesra',teesraValue);
+        localStorage.setItem('achi',achiValue);
+        localStorage.setItem('tech',techValue);
+        localStorage.setItem('soft',softValue);
+        localStorage.setItem('fs',fsValue);
+        localStorage.setItem('per',perValue);
+        localStorage.setItem('ext',extValue);
+        localStorage.setItem('pro',proValue);
+        localStorage.setItem('inte',inteValue);
+        localStorage.setItem('dec',decValue);
+
+        window.location.href="resume1.html";
+    })
+
+
+    
+</script>
+</body>
+</html>
